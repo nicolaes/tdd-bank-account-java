@@ -19,6 +19,9 @@ public class Account {
     }
 
     public void withdraw(int amount) {
+        if (amount < 0) {
+            throw new IllegalArgumentException("Cannot withdraw negative amounts");
+        }
         balance -= amount;
     }
 }
