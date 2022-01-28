@@ -41,4 +41,10 @@ public class AccountTest {
         account.withdraw(10);
         assertThat(account.balance()).isEqualTo(20);
     }
+
+    @Test
+    public void withdrawNegativeAmount_shouldNotWork() {
+        Account account = emptyAccount();
+        assertThatThrownBy(() -> account.withdraw(-10));
+    }
 }
