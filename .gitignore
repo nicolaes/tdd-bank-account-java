@@ -6,8 +6,8 @@ out/
 .idea/codeStyles
 .idea/gradle.xml
 .idea/terminal.xml
-/.idea/compiler.xml
-/.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
 target/
 
 # gradle
