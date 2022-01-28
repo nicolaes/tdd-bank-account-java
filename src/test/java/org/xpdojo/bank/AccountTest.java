@@ -47,4 +47,10 @@ public class AccountTest {
         Account account = emptyAccount();
         assertThatThrownBy(() -> account.withdraw(-10));
     }
+
+    @Test
+    public void withdrawExcessAmount_shouldNotWork() {
+        Account account = emptyAccount();
+        assertThatThrownBy(() -> account.withdraw(10));
+    }
 }
