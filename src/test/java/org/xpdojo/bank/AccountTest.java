@@ -9,7 +9,6 @@ public class AccountTest {
 
     @Test
     public void initialAccount_shouldHaveZeroBalance() {
-        Account account = new Account();
-        assertThat(account.balance()).isEqualTo(0);
+        assertThat(Account.emptyAccount().balance()).isEqualTo(0);
     }
 }
