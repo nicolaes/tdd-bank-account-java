@@ -22,6 +22,9 @@ public class Account {
         if (amount < 0) {
             throw new IllegalArgumentException("Cannot withdraw negative amounts");
         }
+        if (balance() < amount) {
+            throw new IllegalStateException("Account balance too low to withdraw from");
+        }
         balance -= amount;
     }
 }
