@@ -24,7 +24,7 @@ Two key things to learn / practice in this Kata:
 
 1. In your new fork, click on the “Actions” tab and then on the “I understand my workflows, go ahead and run them”
 
-   ![](enable_workdlows.jpg)
+   ![](enable_workflows.jpg)
 
 1. Having forked into your own account, you then clone to download it from Github to your working machine:
 
